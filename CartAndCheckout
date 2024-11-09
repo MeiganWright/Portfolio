@@ -1,0 +1,51 @@
+from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.common.by import By
+import time
+from selenium.webdriver.common.alert import Alert
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+
+#set chromodriver.exe path
+driver = webdriver.Chrome()
+
+driver.get("http://localhost/ecommerce_tutorial/login.html")
+#login
+username = driver.find_element(By.ID, "username")
+username.send_keys("Lu")
+password = driver.find_element(By.ID, "password")
+password.send_keys("happy")
+#login=driver.find_element(By.TYPE, "submit")
+password.send_keys(Keys.ENTER)
+WebDriverWait(driver,5).until(EC.alert_is_present())
+driver.switch_to.alert.accept()
+
+
+#Add Bags to Cart
+BagQ=driver.find_element(By.ID, "product1_quantity").send_keys("6")
+time.sleep(1)
+BagCart=driver.find_element(By.NAME, "add_to_cart").send_keys(Keys.ENTER)
+time.sleep(2)
+
+
+#Proceed to Checkoutscreen
+Checkout=driver.find_element(By.XPATH, "//input[@type='submit']").click()
+time.sleep(2)
+
+#Insert Billing Info
+name=driver.find_element(By.ID, "name").send_keys("Mei")
+email=driver.find_element(By.ID, "email").send_keys("Fake@email.com")
+address=driver.find_element(By.ID, "address").send_keys("1st Avenue, Test Gardens")
+City=driver.find_element(By.ID, "city").send_keys("Trialville")
+State=driver.find_element(By.ID, "state").send_keys("Test")
+zipcode=driver.find_element(By.ID, "zip").send_keys("99999")
+time.sleep(1)
+cardholder=driver.find_element(By.ID, "cardholder").send_keys("Test, Mei")
+cardnum=driver.find_element(By.ID, "cardnumber").send_keys("9999000099991111")
+expmonth=driver.find_element(By.ID, "expmonth").send_keys("09")
+expyear=driver.find_element(By.ID, "expyear").send_keys("99")
+cvv=driver.find_element(By.ID, "cvv").send_keys("881")
+time.sleep(3)
+
+PlaceOrder=driver.find_element(By.XPATH, "//input[@type='submit']").click()
+time.sleep(10)
