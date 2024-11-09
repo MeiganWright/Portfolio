@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn with __</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="" type="" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <div class="logo">
+          <a href="index.html">
+            <img src="images/AlertAndWalkingMan.gif" alt="logo" />
+          </a>
+        </div>
+
+        <div class="main-menu">
+          <ul>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a class="btn btn-light" href="login.html"> Log In</a>
+            </li>
+            <li>
+              <a href="#">About This Game</a>
+            </li>
+            <li>
+              <a href="includes/register.php">Register</a>
+            </li>
+            <li>
+              <a href="#">Download</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--Hero-->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1 class="hero-heading text-xxl">
+            Learn the Fundamentals of Coding!
+          </h1>
+          <div class="hero-buttons">
+            <a href="download.html" class="btn btn-primary">Download Game</a>
+            <a href="registration.html" class="btn btn-light"
+              >Make an Account</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Video Section-->
+    <section class="video bg-black">
+      <div class="container-sm">
+        <h2 class="video-heading text-xl text-center">Type Your Commands!</h2>
+        <div class="video-content">
+          <a href="#">
+            <video width="640" height="360" controls>
+              <source src="/images/video.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </a>
+          <a href="registration.html" class="btn btn-primary">Get Started</a>
+        </div>
+      </div>
+    </section>
+
+    <!--Reviews-->
+    <section class="reviews bg-dark">
+      <div class="container">
+        <h3 class="review-heading text-xl">Here are the top three reviews!</h3>
+        <div class="review-grids">
+          <div class="card">
+            <p>
+              "I can see myself learning with this. I just want more levels."
+            </p>
+            <p>Gianni Blanche-Paul</p>
+            <p>Age: 12</p>
+          </div>
+          <div class="card">
+            <p>
+              "I like the way the game plays so far. I'll wait for more
+              updates!"
+            </p>
+            <p>Bridgette Ramsingh</p>
+            <p>Age: 15</p>
+          </div>
+          <div class="card">
+            <p>"This made me interested in learning to code"</p>
+            <p>Erynn Wright</p>
+            <p>Age: 9</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--ReviewSubmission-->
+    <section class="submit-review">
+      <div class="container">
+        <h3 class="submit-review-flex text-xl text-center">
+          Played Already? Leave a Review!
+        </h3>
+        <p class="submit-review text-md text-center">
+          I'd love to hear your feedback and recommendations! Share them with
+          me.
+        </p>
+
+        <div class="submit-review-flex">
+          <!--Card 1 May be deleted I think, later-->
+          <div class="card bg-light card-with-padding">
+            <label for="name">Name:</label>
+            <input type="text" id="review_name" name="review_name" />
+
+            <label for="email">Email:</label>
+            <input type="email" id="review_email" name="review_email" />
+
+            <label for="review">Review:</label>
+            <input type="text" id="review_text" name="review_text" rows="10" />
+
+            <button type="submit" class="btn btn-dark btn-block">
+              Submit Review
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Frequently Asked Questions-->
+    <section class="faq bg-orange">
+      <div class="container">
+        <h3 class="text-xl text-center">Frequently Asked Questions</h3>
+
+        <div class="faq-content">
+          <div class="faq-group">
+            <div class="faq-group-header">
+              <h4 class="text-md">
+                Do I need to be in a class setting to play this game?
+              </h4>
+              <i class="fas fa-plus"></i>
+            </div>
+            <div class="faq-group-body">
+              <p>
+                In the current version for upload, This game is best used in a
+                classroom setting with someone to guide and teach you. However,
+                you can still play without that once you have an account! And
+                future versions will include more independent learning.
+              </p>
+            </div>
+          </div>
+
+          <!--Question 2-->
+          <div class="faq-group">
+            <div class="faq-group-header">
+              <h4 class="text-md">Is this game free?</h4>
+              <i class="fas fa-plus"></i>
+            </div>
+            <div class="faq-group-body">
+              <p>
+                It's completely free and available for download once an account
+                is made! The goal of this game is mainly to provide people,
+                students or adults, a means of learning basic coding
+                fundamentals.
+              </p>
+            </div>
+          </div>
+
+          <!--Question 3-->
+          <div class="faq-group">
+            <div class="faq-group-header">
+              <h4 class="text-md">
+                Is this game available for Apple Products or phones?
+              </h4>
+              <i class="fas fa-plus"></i>
+            </div>
+            <div class="faq-group-body">
+              <p>
+                Currently, this game is only available on windows. Later
+                versions will include support for handheld devices and MAC
+                users.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

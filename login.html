@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Login</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <div class="logo">
+          <a href="index.html">
+            <img src="" alt="logo" />
+          </a>
+        </div>
+
+        <div class="main-menu">
+          <ul>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a class="btn btn-light" href="login.html"> Log In</a>
+            </li>
+            <li>
+              <a href="#">About This Game</a>
+            </li>
+            <li>
+              <a href="registration.html">Register</a>
+            </li>
+            <li>
+              <a href="#">Download</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <h2>Login</h2>
+    <form action="login.php" method="post">
+      <div class="container">
+        <div class="loginfrm">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required />
+          <input
+            type="checkbox"
+            onclick="togglePasswordVisibility('password')"
+          />
+          Show Password
+        </div>
+
+        <div class="loginbtn">
+          <input type="submit" value="Login" />
+        </div>
+      </div>
+
+      <div class="container">
+        <p>Don't have an account? <a href="registration.html">Register</a></p>
+        <a href="index.html">Back to Homepage</a>
+      </div>
+    </form>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
